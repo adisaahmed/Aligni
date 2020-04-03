@@ -1,0 +1,3013 @@
+html {
+	font-family: strategosVerdana;
+  	scroll-behavior: smooth;
+}
+
+body {
+	background: #fff;
+	font-size:22px;
+	line-height: 32px;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	word-wrap:break-word !important;
+	font-family: strategosVerdana;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}	
+
+h3 {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #FFF;
+}
+
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	line-height: 70px;
+}	
+
+#container {
+	margin: 0 auto;
+	max-width: 890px;
+}
+
+p {
+	text-align: center;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: #fff;
+	height: 100px;
+}
+
+#logo {
+	display: block;
+	padding: 0px 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+	margin-top: 7px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	height: 100px;
+	line-height: 80px;
+}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	background-color: #fff;
+}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:10px 15px;	
+	color:#003B75;
+	font-size:10px;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+
+
+
+/* Background color change on Hover */
+nav a:hover { 
+	color: #C53121;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 90px; 
+	z-index: 1500;
+}
+
+.Microsoft_Dynamics_ul {
+	display: none;
+	position: absolute; 
+	top: 60px; 
+	left: 120px;
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:300px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+.submenu_li_a {
+	font-size: 10px;
+	line-height: 22px;
+	width: 300px;
+    height: 40px;
+}
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+.book_a_button_nav {
+    height: 40px;
+    line-height: 22px;
+    background: #C53121;
+    margin-top: 30px;
+    text-transform: uppercase;
+    margin-right: 25px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.book_a_button_nav:hover {
+	color: #fff;
+	background-color: #003B75;
+}
+
+.aligni_slider_img_1 {
+	background-image: url('../img/1.jpg');
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 150px 50px 100px;
+}
+.aligni_slider_img_2 {
+	background-image: url('../img/2.png');
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 150px 50px 100px;
+}
+
+.aligni_slider_img_3 {
+	background-image: url('../img/3.jpg');
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 150px 50px 100px;
+}
+
+.aligni_slider_img_4 {
+	background-image: url('../img/4.jpg');
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 150px 50px 100px;
+}
+
+.aligni_slider_img_5 {
+	background-image: url('../img/5.jpg');
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 150px 50px 100px;
+}
+
+.aligni_slider_img_6 {
+	background-image: url('../img/6.jpg');
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 150px 50px 100px;
+}
+
+.aligni_slider_img_content {
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #000;
+	line-height: 40px;
+}
+
+.aligni_slider_img_content_3, .aligni_slider_img_content_5, .aligni_slider_img_content_6 {
+	color: #fff !important;
+}
+
+.aligni_nav_on_slider {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.aligni_nav_on_slider_a {
+	background-color: #C53121;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.aligni_nav_on_slider_a:hover {
+	background-color: #003B75;
+	color: #fff;
+}
+
+.aligni_slider_img_content_6 {
+	text-align: left;
+}
+
+.aligni_about_us {
+	background-color: #003B75;
+	padding: 50px 0px;	
+}
+
+.aligni_partnership_value {
+	background-color: #fff;
+	padding: 50px 0px;	
+}
+
+.aligni_about_us_h2 {
+	color: #C53121;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.aligni_partnership_value_p {
+	font-size: 12px;
+	text-align: justify;
+	color: #555;
+}
+
+.aligni_about_us_p {
+	font-size: 12px;
+	text-align: justify;
+}
+
+.flexDisplay {
+    display: flex;
+    height: auto;
+}
+
+.flexHeight { 
+    flex: 1;
+    height: auto;
+    background-color: #0586F0;
+    padding: 40px 0px;
+}
+
+.flexHeight_2 {
+	background-color: #003B75;
+}
+
+.flexHeightResize { 
+    flex: 1;
+    height: auto;
+    background-color: #fff;
+    padding: 40px 0px;
+}
+
+.mission_section_h1 {
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: #C53121;
+}
+
+.mission_section_p {
+	font-size: 13px;
+	text-align: justify;
+	padding: 0px 25px;
+}
+
+.flexHeightResize_mission_section_p {
+	color: #555;
+}
+
+.our_team_section {
+	padding: 50px;
+}
+
+.our_team_section_h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #C53121;
+	margin-top: 0px;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.our_team_section_img {
+    border: 1px solid red;
+    height: 250px;
+    width: 73%;
+    border-radius: 100%;
+    margin: auto;
+    background-image: url(../img/aligni-team.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.our_team_section_p {
+	color: #C53121;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-top: 20px;
+	padding-left: 20%;
+	margin-bottom: 0px;
+	line-height: 0px;
+}
+
+.our_team_section_em {
+	color: #000;
+	padding-left: 20%;
+	font-size: 10px;
+}
+
+.our_team_section_resume {
+	color: #555;
+	padding-left: 20%;
+	font-size: 12px;
+	text-align: justify;
+}
+
+.contact_section {
+	background-color: #0586F0;
+}
+
+.contact_section_main_content {
+	width: 50%;
+	margin: auto;
+	background: #fff;
+	padding: 30px 0px;
+}
+
+.contact_section_main_content_h1 {
+    margin-top: 0px;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #0586F0;
+    padding: 0px 20px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+
+.contact_section_address {
+	background-color: #fff;
+	padding: 20px;
+}
+
+.contact_section_address_h1 {
+    margin-top: 0px;
+    color: #555;
+    font-size: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #C53121;
+    line-height: 25px;
+}
+
+.contact_section_main_content_span {
+	color: #C53121;
+}
+
+.contact_section_address_col_p {
+	color: #555;
+	font-size: 10px;
+	text-align: left;
+	line-height: 20px;
+
+}
+
+.fa_phone {
+	color: #0586F0;
+	padding-right: 5px;
+}
+
+.contact_section_address_email_phone {
+	color: #555;
+	text-align: left;
+	font-size: 10px;
+	line-height: 25px;
+}
+
+.fa_map {
+	font-size: 60px !important;
+	color: #0586F0;
+}
+
+.fa_map_parent {
+	text-align: center;
+}
+
+.form_control {
+    font-size: 12px;
+    border: 1px solid #0586F0;
+}
+
+.form_control:focus {
+	border-color: #C53121;
+	box-shadow: none;
+	outline: none;
+}
+
+.form_control_textarea {
+	height: 200px;
+	max-height: 200px;
+	width: 100%;
+}
+
+.btn_default {
+	background-color: #C53121;
+	float: right;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.btn_default:hover {
+	background-color: #003B75;
+	color: #fff;
+}
+
+footer {
+	padding: 40px 0px;
+	background: #555;
+}
+
+.footer_left_p {
+	color: #fff;
+	font-size: 10px;
+	text-align: left;
+	line-height: 25px;
+	margin-bottom: 0px;
+}
+
+.casual_margin_top {
+	margin-top: 20px;
+}
+
+.footer_information {
+	color: #C53121;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-top: 0px;
+	line-height: 25px;
+}
+
+.footer_information_ul {
+	color: #555;
+    text-align: center;
+    list-style: none;
+    font-size: 9px;
+    padding-left: 0px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.footer_information_ul_li_a {
+	color: #fff;
+}
+
+.footer_information_ul_li_a:hover {
+	color: #C53121;
+}
+
+.mainn_content {
+    border-bottom: 1px solid #50AE41;
+    padding-bottom: 30px;
+}
+
+.sec_footer_container_p {
+    text-align: right;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.font_fa {
+	color: #fff;
+}
+
+.li_font_fa {
+	display: inline-block;
+	padding: 0px 5px;
+}
+
+.ul_li_font_fa {
+	padding-left: 0px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.font_fa:hover {
+	color: #C53121;
+}
+
+.aligni_slider_img_overlay {
+	width: 50%;
+	margin: auto;
+}
+
+.aligni_slider_img_overlay_3 {
+	width: 50%;
+	margin: auto;
+}
+
+.central_capabilities_banner {
+	background-image: url(../img/central_capabilities_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+}
+
+.dynamics_capabilities_banner {
+	background-image: url(../img/dynamics_capabilities_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.distribution_banner {
+	background-image: url(../img/distribution_banner.png);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.finance_operation_banner {
+	background-image: url(../img/finance_operation_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.finance_service_banner {
+	background-image: url(../img/finance_service_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.health_care_banner {
+	background-image: url(../img/health_care_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.eCommerce_banner {
+	background-image: url(../img/eCommerce_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.non_profit_banner {
+	background-image: url(../img/non_profit_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.out_growing_banner {
+	background-image: url(../img/out_growing_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.vs_netsuite_banner {
+	background-image: url(../img/vs_netsuite_banner.png);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.d_vs_netsuite_banner {
+	background-image: url(../img/d_vs_netsuite_banner.png);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.vs_business_one_banner {
+	background-image: url(../img/vs_business_one_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.business_review_banner {
+	background-image: url(../img/business_review_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.aligni_implementation_banner {
+	background-image: url(../img/aligni_implementation_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.aligni_customer_care_banner {
+	background-image: url(../img/aligni_customer_care_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.aligni_automation_banner {
+	background-image: url(../img/aligni_automation_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.dynamic_marketing_banner {
+	background-image: url(../img/dynamic_marketing_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.project_automation_banner {
+	background-image: url(../img/project_automation_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.field_service_banner {
+	background-image: url(../img/field_service_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.crm_online_banner {
+	background-image: url(../img/crm_online_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.cloud_readiness_banner {
+	background-image: url(../img/cloud_readiness_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.azure_banner {
+	background-image: url(../img/azure_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.why_aligni_banner {
+	background-image: url(../img/why_aligni_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.dynamics_sales_banner {
+	background-image: url(../img/dynamics_sales_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.talent_banner {
+	background-image: url(../img/talent_banner.png);
+	height: 500px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.implementation_plans__banner {
+	background-image: url(../img/implementation_plans__banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+}
+
+.central_video__banner {
+	background-image: url(../img/central_video__banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+}
+
+.tradition_erp__banner {
+	background-image: url(../img/tradition_erp__banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+}
+
+.dynamic_azure_banner {
+	background-image: url(../img/dynamic_azure_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.erp_deployment_option_banner {
+	background-image: url(../img/erp_deployment_option_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.data_recovery_banner {
+	background-image: url(../img/data_recovery_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.office_365_banner {
+	background-image: url(../img/office_365_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.power_bi_banner {
+	background-image: url(../img/power_bi_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.microsoft_cloud_banner {
+	background-image: url(../img/microsoft_cloud_banner.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.business_central_faq {
+	background-image: url(../img/business_central_faq.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+}
+
+.central_capabilities_banner_caption {
+	padding-top: 170px;
+    width: 40%;
+    margin: auto;
+}
+
+.cloud_readiness_banner_caption {
+	padding-top: 120px;
+    width: 40%;
+    margin: auto;
+}
+
+.why_aligni_banner_caption {
+	padding-top: 120px;
+    width: 80%;
+    margin: auto;
+}
+
+.dynamic_azure_banner_caption {
+	padding-top: 180px;
+    width: 40%;
+    margin: auto;
+}
+
+.implementation_plans__banner_caption {
+	padding-top: 200px;
+    width: 40%;
+    margin: auto;
+}
+
+.central_capabilities_banner_caption_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 45px;
+}
+
+.health_care_banner_caption_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 45px;
+	color: #000;
+}
+
+.eCommerce_banner_caption_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+}
+
+.vs_netsuite_banner_caption_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 45px;
+	color: #000;
+}
+
+.erp_deployment_option_caption_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	line-height: 45px;
+}
+
+.power_bi_banner_caption_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	line-height: 45px;
+}
+
+.azure_banner_caption_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 45px;
+	color: #000;
+}
+
+.why_aligni_banner_caption_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 45px;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.business_review_banner_caption_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 45px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.talent_banner_caption_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 45px;
+	color: #000;
+}
+
+.financial_visibility_section {
+	padding: 40px 0px;
+	background-color: #fff;
+}
+
+.dynamics_sale_section {
+	padding: 40px 0px;
+	background-color: #000;
+}
+
+.financial_visibility_section_h1 {
+	margin-top: 0px;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #C53121;
+}
+
+.dynamics_sale_section_2_container_col_5_li {
+	margin-top: 0px;
+	font-size: 12px;
+	text-align: justify;
+	color: #000;
+	margin-bottom: 30px;
+	line-height: 24px;
+}
+
+.deliver_project_section_h1 {
+	margin-top: 0px;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #C53121;
+}
+
+.financial_visibility_section_container_col_7_img {
+	background-image: url(../img/financial_visibility_section_container_col_7_img.png);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.dynamics_sale_section_container_col_7_img {
+	background-image: url(../img/dynamics_sale_section_container_col_7_img.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.dynamics_sale_section_container_col_7_img {
+	background-image: url(../img/dynamics_sale_section_container_col_7_img.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.dynamics_sale_section_relationship_container_col_7_img {
+	background-image: url(../img/dynamics_sale_section_relationship_container_col_7_img.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.optimize_supply_chain_section_container_col_7_img {
+	background-image: url(../img/optimize_supply_chain_section_container_col_7_img.png);
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.relationship_management_section_container_col_7_img {
+	background-image: url(../img/relationship_management_section_container_col_7_img.png);
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.dynamics_sale_section_3_time_container_col_7_img {
+	background-image: url(../img/dynamics_sale_section_3_time_container_col_7_img.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.deliver_project_section_container_col_7_img {
+	background-image: url(../img/deliver_project_section_container_col_7_img.png);
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.order_management_section_container_col_7_img {
+	background-image: url(../img/order_management_section_container_col_7_img.png);
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.deliver_project_section_3_container_col_7_img {
+	background-image: url(../img/deliver_project_section_3_container_col_7_img.jpg);
+	height: 500px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.financial_visibility_section_container_col_5_li {
+	color: #555;
+	font-size: 12px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+.financial_visibility_section_container_col_5_span {
+	color: #C53121;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.deliver_project_section_container_col_5_span {
+	color: #C53121;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.logo_a {
+	padding: 0px;
+}
+
+.optimize_supply_chain_section {
+	padding: 40px 0px;
+	background-color: #fff;
+}
+
+.dynamics_sale_section_2 {
+	padding: 40px 0px;
+	background-color: #fff;
+}
+
+.relationship_management_section {
+	padding: 40px 0px;
+	background-color: #fff;
+}
+
+.dynamics_sale_section_3 {
+	padding: 40px 0px;
+	background-color: #000;
+}
+
+.deliver_project_section {
+	padding: 40px 0px;
+	background-color: #fff;
+}
+
+.implementation_plans__sec_1 {
+	padding: 40px;
+	background-color: #eee;
+}
+
+.implementation_plans__sec_1_h1 {
+	margin-top: 0px;
+	color: #C53121;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 40px;
+}
+
+.implementation_plans__sec_1_p {
+	text-align: justify;
+	color: #555;
+	line-height: 25px;
+	font-size: 15px;
+}
+
+.implementation_plans__sec_2 {
+	padding: 40px;
+	background: #eee;
+}
+
+.implementation_plans__sec_3 {
+	padding: 40px;
+	background: #fff;
+}
+
+.implementation_plans__sec_4 {
+	padding: 40px;
+	background: #eee;
+}
+
+.implementation_plans__sec_2_h1 {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #C53121;
+	margin-top: 0px;
+	border-bottom: 2px solid #C53121;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.implementation_plans__sec_2_col_md_5_parent {
+	height: auto;
+	padding: 40px 20px;
+	background: #003B75;
+}
+
+.implementation_plans__sec_3_col_md_5_parent {
+	height: auto;
+	padding: 40px 20px;
+	background: #0586F0;
+}
+
+.implementation_plans__sec_4_col_md_5_parent {
+	height: auto;
+	padding: 40px 20px;
+	background: #50AE41;
+}
+
+.implementation_plans__sec_2_col_md_5_parent_h1 {
+	font-size: 15px;
+	margin-top: 0px;
+	text-transform: uppercase;
+	margin-bottom: 70px;
+}
+.implementation_plans__sec_2_col_md_5_parent_div_1 {
+	margin-bottom: 70px;
+}
+
+.implementation_plans__sec_2_col_md_5_parent_div_1_h1 {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	line-height: 25px;
+	margin-top: 0px;
+}
+
+.implementation_plans__sec_2_col_md_5_parent_div_1_p {
+	font-size: 10px;
+	text-transform: uppercase;
+	width: 60%;
+    margin: auto;
+    line-height: 25px;
+}
+
+.implementation_plan_scrum_parent {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.implementation_plan_price_parent {
+	width: 35%;
+    margin: auto;
+    font-size: 10px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.implementation_plan_price_parent_span {
+	display: block;
+	font-size: 20px;
+}
+
+.implementation_plan_button {
+	text-align: center;
+}
+
+.implementation_plan_button_a {
+    font-size: 10px;
+    text-align: center;
+    padding: 20px 30px;
+    background: red;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.implementation_plan_button_a:hover {
+	color: #fff;
+	background: #0586F0;
+}
+
+.implementation_plan_button_sec_3 {
+	text-align: center;
+}
+
+.implementation_plan_button_sec_3_a {
+    font-size: 10px;
+    text-align: center;
+    padding: 20px 30px;
+    background: red;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.implementation_plan_button_sec_3_a:hover {
+	color: #fff;
+	background: #003B75;
+}
+
+.implementation_plan_price_parent_p {
+	margin-bottom: 0px;
+}
+
+.easy_step_1_content_parent_h1 {
+	font-size: 15px;
+	color: #000;
+	margin-top: 0px;
+	text-align: left;
+	line-height: 30px;
+}
+
+.easy_step_1_content_parent_ol, .easy_step_1_content_parent_ul {
+	color: #555;
+	font-size: 12px;
+}
+
+.easy_step_1_content_parent_ol_li {
+	margin-bottom: 10px;
+}
+
+.central_video_business_owner_img {
+	background-image: url(../img/central_video_business_owner_img.jpg);
+	height: 500px;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+.central_video_sales_representatives_img {
+	background-image: url(../img/central_video_sales_representatives_img.jpg);
+	height: 500px;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+.central_video_book_keeper_img {
+	background-image: url(../img/central_video_book_keeper_img.jpg);
+	height: 500px;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+.central_video_business_owner_content {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.central_video_sales_representatives_content {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.central_video_video {
+	height: 400px;
+	max-height: 400px;
+}
+
+.central_video_video_content_parent_h3 {
+	margin-top: 0px;
+	color: #555;
+	font-size: 15px;
+	text-align: left;
+}
+
+.central_video_business_owner_content_h1 {
+	color: #C53121;
+	font-size: 25px;
+	margin-top: 0px;
+	text-transform: uppercase;
+}
+
+.central_video_video_content_parent_ul {
+	color: #555;
+	font-size: 10px;
+	text-align: left;
+}
+
+.central_video_video_youtube {
+	border: transparent;
+}
+
+.central_video_container {
+	margin-bottom: 30px;
+}
+
+.implementation_plans__sec_1_h5 {
+	color: #C53121;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.implementation_plans__sec_1_p {
+	font-size: 10px;
+	color: #555;
+	text-align: justify;
+}
+
+.implementation_plans__sec_1_ol, .implementation_plans__sec_1_ul {
+	color: #555;
+	text-align: left;
+	font-size: 15px;
+}
+
+.tradition_section_container_col_5_li {
+	color: #555;
+	line-height: 25px;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+.panel_title_h {
+	color: #003B75;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.panel_title_h_2 {
+	color: #C53121;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.panel_title_h:hover {
+	color: #C53121;
+}
+
+.panel_title_body {
+    color: #555;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 20px 0px;
+}
+
+.business_central_faq_accordion_parent {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.panel_group_accordion {
+	margin-bottom: 30px;
+}
+
+.track_span {
+	color: #C53121;
+	font-size: 20px;
+}
+
+.our_team_read_more {
+	color: #C53121;
+}
+
+.modal_body {
+	color: #555;
+	font-size: 12px;
+}
+
+.modal_title {
+	color: #C53121;
+}
+
+.user_interface_parent {
+	padding: 40px 0px;
+}
+
+.user_interface_p {
+	color: #555;
+	font-size: 12px;
+	text-align: left;
+}
+
+.user_interface_img {
+	height: 100px;
+	background-image: url(../img/outgrowing_capabilities.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.user_interface_h1 {
+	margin-top: 0px;
+	color: #000;
+	text-align: left;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.user_interface_img_1 {
+	height: 300px;
+	background-image: url(../img/user_interface_img_1.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.user_interface_img_2 {
+	height: 300px;
+	background-image: url(../img/user_interface_img_2.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.user_interface_parent_sec_container {
+	margin-bottom: 100px;
+}
+
+.dynamics_capabilities_main {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.dynamics_capabilities_main_h1 {
+	color: #C53121;
+	font-size: 20px;
+	margin-top: 0px;
+	text-align: left;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+
+.dynamic_capabilities_parent {
+	margin-bottom: 50px;
+}
+
+.dynamics_capabilities_main_p {
+	font-size: 12px;
+	color: #555;
+	text-align: left;
+}
+
+.dynamics_capabilities_main_li {
+	font-size: 12px;
+	color: #555;
+	margin-bottom: 20px;
+	text-align: justify;
+	line-height: 20px;
+}
+
+.dynamics_capabilities_main_book_a_meeting {
+	background: #000;
+	padding: 70px 0px;
+	text-align: center;
+}
+
+.finance_operation_about_main_book_a_meeting {
+	background: #eee;
+	padding: 40px 0px;
+	text-align: center;
+}
+
+.dynamics_capabilities_main_book_a_meeting_button {
+    padding: 10px 40px;
+    line-height: 22px;
+    background: #C53121;
+    margin-top: 30px;
+    text-transform: uppercase;
+    margin-right: 25px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.dynamics_capabilities_main_book_a_meeting_button:hover {
+	color: #fff;
+	background-color: #003B75;
+}
+
+.finance_operation_about {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.finance_operation_about_p {
+	text-align: justify;
+	color: #555;
+	font-size: 20px;
+}
+
+.finance_operation_main_1 {
+	background: #fff;
+	padding: 40px 0px;
+}
+
+.talent_main_1 {
+	background: #fff;
+	padding: 40px 0px;
+}
+
+.talent_main_2 {
+	background: #eee;
+	padding: 40px 0px;
+}
+
+.talent_main_3 {
+	background: #fff;
+	padding: 40px 0px;
+}
+
+.talent_main_4 {
+	background: #eee;
+	padding: 40px 0px;
+}
+
+.talent_main_5 {
+	background: #fff;
+	padding: 40px 0px;
+}
+
+.talent_main_2_h1 {
+	text-align: center;
+	font-size: 20px;
+	line-height: 25px;
+	color: #C53121;
+	margin-top: 0px;
+	width: 100%;
+}
+
+.finance_operation_main_2 {
+	background: #eee;
+	padding: 40px 0px;
+}
+
+.finance_operation_main_3 {
+	background: #fff;
+	padding: 40px 0px;
+}
+
+.finance_operation_main_1_h1 {
+	color: #C53121;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+.dynamics_sale_main_1_h1 {
+	color: #C53121;
+	font-size: 20px;
+	margin-top: 0px;
+	width: 100%;
+	text-align: left;
+}
+
+.finance_operation_main_3_h1 {
+	color: #C53121;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+.finance_operation_main_1_p {
+	font-size: 12px;
+	text-align: justify;
+	color: #555;
+}
+
+.talent_main_1_p {
+	font-size: 12px;
+	text-align: center;
+	color: #555;
+	line-height: 20px;
+}
+
+.finance_operation_about_main_1_book_a_meeting {
+	background: #fff;
+	padding: 40px 0px;
+	text-align: center;
+}
+
+.finance_operation_about_main_2_book_a_meeting {
+	background: #eee;
+	padding: 40px 0px;
+	text-align: center;
+}
+
+.finance_operation_about_main_3_book_a_meeting {
+	background: #fff;
+	padding: 40px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.finance_operation_main_3_left_col_img {
+	background-image: url('../img/finance_operation_main_3_left_col_img.png');
+	height: 300px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.finance_operation_main_3_right_col_img {
+	background-image: url('../img/finance_operation_main_3_right_col_img.png');
+	height: 300px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.finance_operation_main_3_left_col_h1 {
+	font-size: 15px;
+	color: #555;
+	margin-top: 0px;
+}
+
+.finance_operation_main_3_left_col_h1_2 {
+	font-size: 20px;
+	color: #555;
+	margin-top: 0px;
+}
+
+.finance_operation_main_3_left_col_p {
+	font-size: 10px;
+	color: #555;
+	text-align: left;
+	line-height: 20px;
+}
+
+.finance_operation_main_3_left_col_p_center {
+	text-align: center;
+	color: #555;
+	font-size: 10px;
+	margin-bottom: 0px;
+	line-height: 25px;
+}
+
+.finance_operation_main_4_content_img {
+	height: 50px;
+}
+
+.finance_operation_main_4 {
+	background: #eee;
+	padding: 40px 0px;
+}
+
+.finance_operation_main_5 {
+	background: #fff;
+	padding: 40px 0px;
+}
+
+.crm_online_parent_2 {
+	background: #eee;
+	padding: 40px 0px;
+}
+
+.finance_operation_main_4_content {
+	text-align: center;
+}
+
+.finance_operation_main_4_content_h1 {
+	margin-top: 0px;
+	font-size: 20px;
+	color: #555;
+}
+
+.finance_operation_main_4_content_p {
+	font-size: 10px;
+	line-height: 20px;
+	color: #555;
+}
+
+.finance_operation_main_4_content_span {
+	color: #C53121;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.finance_operation_main_4_content_a {
+	color: #C53121;
+}
+
+.finance_operation_main_4_content_a:hover {
+	color: #003B75;
+}
+
+.finance_operation_main_3_ul {
+	color: #555;
+    font-size: 12px;
+    width: 100%;
+}
+
+.finance_operation_main_4_h1 {
+    margin-top: 0px;
+    font-size: 20px;
+    color: #C53121;
+    width: 100%;
+    text-align: left;
+}
+
+.finance_operation_main_4_content_span_2 {
+    line-height: 60px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 40px;
+}
+
+.talent_main_2_p {
+	text-align: center;
+	font-size: 10px;
+	color: #555;
+	line-height: 20px;
+	margin: 50px 0px;
+}
+
+.talent_main_2_b {
+	text-transform: uppercase;
+	display: block;
+	font-size: 12px;
+}
+
+.talent_main_3_p {
+	font-size: 10px;
+	line-height: 25px;
+}
+
+.talent_main_5_p {
+	color: #555;
+	text-align: center;
+	width: 100%;
+}
+
+.talent_main_5_pp {
+	font-size: 10px;
+	color: #555;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 70px;
+}
+
+.finance_operation_main_4_content_hh1 {
+	margin-top: 0px;
+	font-size: 20px;
+	color: #555;
+}
+
+.dynamics_sale_main_1_p {
+	color: #555;
+	text-align: left;
+	font-size: 12px;
+}
+
+.dynamics_sale_main_1_h1_h1 {
+	background: #C53121;
+	font-size: 15px;
+	margin-top: 0px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	line-height: 25px;
+}
+
+.dynamics_sale_main_1_right_h1_h1 {
+	background: #003B75;
+	font-size: 15px;
+	margin-top: 0px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	line-height: 25px;
+}
+
+.dynamics_sales_main_p {
+	color: #555;
+	text-align: justify;
+	font-size: 12px;
+}
+
+.dynamics_sales_ul {
+	color: #555;
+	font-size: 12px;
+}
+
+.dynamics_sales_how_to_choose_parent {
+	background: #eee;
+	padding: 40px 0px;
+}
+
+.dynamics_sales_how_to_choose {
+	background: #fff;
+	padding: 20px;
+	width: 80%;
+	margin: auto;
+	border-left: 2px solid #C53121;
+}
+
+.dynamics_sales_how_to_choose_h1 {
+	font-size: 20px;
+	text-align: left;
+	margin-top: 0px;
+	color: #555;
+}
+
+.dynamics_sales_how_to_choose_p {
+	color: #555;
+	font-size: 12px;
+	text-align: left;
+}
+
+.dynamics_sales_how_to_choose_b {
+	text-transform: uppercase;
+}
+
+.dynamics_sales_how_to_choose_parent_2 {
+	padding: 40px 0px;
+}
+
+.dynamics_sales_how_to_choose_parent_3 {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.dynamics_sales_how_to_choose_parent_4 {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.dynamics_sales_how_to_choose_parent_2_h1 {
+	color: #555;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #C53121;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.dynamics_sales_how_to_choose_parent_2_p {
+	font-size: 15px;
+}
+
+.flip_card_front {
+    background-color: #003B75;
+    padding: 70px 50px;
+    color: #fff;
+    line-height: 25px;
+}
+
+.flip_card_back_h1 {
+	margin-top: 0px;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.dynamics_sales_how_to_choose_parent_2_pp {
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.flip_card_back {
+	padding: 30px 20px;
+}
+
+.dynamics_sales_how_to_choose_parent_2_container {
+	margin-bottom: 50px;
+}
+
+.dynamics_sales_how_to_choose_parent_3_h1 {
+	margin-top: 0px;
+	color: #C53121;
+	font-size: 20px;
+	text-align: left;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.dynamics_sales_how_to_choose_parent_3_col_h1 {
+	font-size: 20px;
+	color: #555;
+	margin-top: 0px;
+	text-align: left;
+}
+
+.dynamics_sales_how_to_choose_parent_3_col_h2 {
+	font-size: 20px;
+	color: #555;
+	margin-top: 0px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.dynamics_sales_how_to_choose_parent_3_col_p {
+	color: #555;
+	font-size: 12px;
+	text-align: left;
+}
+
+.dynamics_sales_how_to_choose_parent_6_col_p {
+	text-align: justify;
+	font-size: 12px;
+	color: #555;
+}
+
+.crm_online_parent {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.cloud_readiness_parent {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.cloud_readiness_parent_1 {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.crm_online_parent_1 {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.crm_online_parent_h1 {
+	margin-top: 0px;
+	text-align: left;
+	color: #555;
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+
+.crm_online_parent_p {
+	text-align: left;
+	font-size: 12px;
+	color: #555;
+	line-height: 25px;
+}
+
+.cloud_readiness_parent_h1 {
+	margin-top: 0px;
+	text-align: center;
+	color: #555;
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+
+.cloud_readiness_parent_p {
+	text-align: center;
+	font-size: 12px;
+	color: #555;
+	line-height: 25px;
+	margin-bottom: 50px;
+}
+
+.crm_online_parent_ul {
+	font-size: 10px;
+	color: #555;
+}
+
+.cloud_readiness_parent_right_content {
+	background: #003B75;
+	padding: 30px;
+	height: auto;
+}
+
+.azure_banner_middle_content {
+	background: #003B75;
+	padding: 30px;
+	height: auto;
+}
+
+.azure_banner_middle_content_margin_bottom {
+	margin-bottom: 30px;
+}
+
+.cloud_readiness_parent_pp {
+	text-align: justify;
+	color: #555;
+	font-size: 12px;
+}
+
+.cloud_readiness_parent_right_content_ul {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.cloud_readiness_parent_right_content_ul_li {
+	margin-bottom: 10px;
+}
+
+.business_secure_p {
+	color: #555;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.cloud_readiness_parent_1_col_parent {
+	text-align: center;
+}
+
+.cloud_readiness_parent_2_h1 {
+	text-align: left;
+	color: #555;
+	font-size: 20px;
+	margin-top: 0px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+
+.cloud_readiness_parent_2_p {
+	text-align: justify;
+	color: #555;
+	font-size: 12px;
+}
+
+.cloud_readiness_parent_2_ul {
+	font-size: 12px;
+	color: #555;
+}
+
+.cloud_readiness_parent_2 {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.cloud_readiness_parent_2_h1 {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.cloud_readiness_parent_col_4_h1 {
+	font-size: 12px;
+	color: #555;
+	line-height: 20px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.cloud_readiness_parent_col_4_p {
+	font-size: 10px;
+	text-align: justify;
+	color: #555;
+	line-height: 25px;
+}
+
+.cloud_readiness_parent_em {
+	font-size: 12px;
+	color: #555;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cloud_readiness_parent_3_h1 {
+	color: #555;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 0px;
+	line-height: 20px;
+}
+
+.cloud_readiness_parent_3_h1_2 {
+	color: #555;
+	text-align: left;
+	font-size: 15px;
+	margin-top: 0px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+
+.cloud_readiness_parent_3_p {
+	color: #555;
+	font-size: 12px;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.cloud_readiness_parent_3_ul_li {
+	line-height: 20px;
+	margin-bottom: 10px;
+	font-size: 10px;
+}
+
+.azure_banner_parent_h1 {
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.azure_banner_middle_content_h1 {
+	margin-top: 0px;
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+.azure_banner_middle_content_p {
+	font-size: 12px;
+	text-align: csnter;
+	line-height: 20px;
+}
+
+.why_azure_parent {
+	padding: 40px 0px
+}
+
+.why_azure_parent_main_content {
+	border: 2px dotted #003B75;
+	padding: 20px;
+	min-height: 450px;
+	max-height: 450px;
+}
+
+.why_azure_parent_main_content_h1 {
+	color: #003B75;
+	margin-top: 0px;
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+
+.why_azure_parent_main_content_p {
+	color: #555;
+	font-size: 12px;
+	text-align: justify;
+}
+
+.why_azure_parent_1 {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.why_azure_parent_1_main_content {
+	background: #fff;
+	padding: 20px;
+	min-height: 300px;
+	max-height: 300px;
+}
+
+.why_azure_parent_1_main_content_h1 {
+	text-align: left;
+	color: #003B75;
+	font-size: 15px;
+	margin-top: 0px;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+.why_azure_parent_1_main_content_ul {
+	font-size: 10px;
+    line-height: 20px;
+    text-align: justify;
+    color: #555;
+}
+
+.why_azure_parent_1_main_content_ul_li {
+	margin-bottom: 10px;
+}
+
+.why_azure_parent_1_container {
+	margin-bottom: 50px;
+}
+
+.dynamic_azure_parent {
+	background: #fff;
+	padding: 40px 0px;
+}
+
+.dynamic_azure_parent_1 {
+	background: #eee;
+	padding: 40px 0px;
+}
+
+.dynamic_azure_parent_2 {
+	background: #fff;
+	padding: 40px 0px;
+}
+
+.dynamic_azure_parent_h1 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	color: #C53121;
+	font-size: 20px;
+	text-align: left;
+	line-height: 20px;
+}
+
+.dynamic_azure_parent_p {
+	text-align: justify;
+	color: #555;
+	font-size: 12px;
+}
+
+.dynamic_azure_parent_container {
+	margin-bottom: 30px;
+}
+
+.dynamic_azure_parent_ul {
+	color: #555;
+	font-size: 12px;
+}
+
+.dynamic_azure_parent_ul_li {
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.dynamic_azure_parent_3 {
+	background-image: url('../img/dynamic_azure_parent_3.png');
+	height: 500px;
+	background-size: 100% auto;
+}
+
+.dynamic_azure_parent_3_h1 {
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 30px;
+	font-size: 20px;
+}
+
+.dynamic_azure_parent_4_h1 {
+	font-size: 20px;
+	color: #555;
+	margin-top: 0px;
+}
+
+.dynamic_azure_parent_4_ul {
+	color: #555;
+	font-size: 12px;
+}
+
+.dynamic_azure_parent_4 {
+	padding: 40px 0px;
+}
+
+.dynamic_azure_parent_4_p {
+	color: #555;
+	text-align: justify;
+	font-size: 12px;
+}
+
+.erp_deployment_option_parent_h1 {
+	text-align: center;
+	font-size: 20px;
+	color: #555;
+	margin-top: 0px;
+}
+
+.erp_deployment_option_parent_col_6_h1 {
+	text-align: center;
+	font-size: 20px;
+	color: #555;
+	margin-top: 0px;
+	border-bottom: 1px solid #555;
+	margin-bottom: 20px;
+}
+
+.erp_deployment_option_parent_col_6_h1_2 {
+	font-size: 15px;
+	color: #555;
+	text-align: left;
+	margin-top: 0px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.dynamic_azure_parent_p_2 {
+	font-size: 10px;
+	color: #555;
+	text-align: left;
+}
+
+.dynamic_azure_parent_p_2_margin_bottom {
+	margin-bottom: 50px;
+}
+
+.erp_deployment_option_parent_3 {
+	background: #eee;
+	padding: 40px 0px;
+}
+
+.erp_deployment_option_parent_4 {
+	background: #fff;
+	padding: 40px 0px;
+}
+
+.dynamic_azure_parent_5 {
+	padding: 40px 0px;
+	background: #003B75;
+}
+
+.dynamic_azure_parent_5_main_content {
+	width: 70%;
+	margin: auto;
+}
+
+.dynamic_azure_parent_5_main_content_h1 {
+	font-size: 25px;
+	margin-top: 0px;
+	line-height: 40px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.dynamic_azure_parent_5_main_content_p {
+	font-size: 12px;
+	text-align: left;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+
+.dynamic_azure_parent_5_main_content_a {
+	text-decoration: none;
+	color: #fff;
+	background: #C53121;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+.data_recovery_parent_h1 {
+	text-align: left;
+	font-size: 30px;
+	margin-top: 0px;
+	color: #555;
+}
+
+.data_recovery_parent_h1_h1 {
+	text-align: left;
+	font-size: 15px;
+	margin-top: 0px;
+	color: #555;
+}
+
+.data_recovery_parent_ul {
+	font-size: 12px;
+	color: #555;
+}
+
+.office_365_h1_h1 {
+	width: 35%;
+	border-bottom: 1px solid #555;
+	color: #555;
+	font-size: 15px;
+	text-align: left;
+	line-height: 45px;
+	margin-top: 0px;
+}
+
+.office_365_3 {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.office_365_3_h1 {
+	font-size: 15px;
+	color: #555;
+	margin-top: 0px;
+	border-bottom: 1px solid #555;
+	text-align: left;
+	width: 90%;
+	line-height: 25px;
+}
+
+.office_365_3_p {
+	font-size: 12px;
+	text-align: justify;
+	color: #555;
+}
+
+.office_365_3_row_content_h1 {
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 0px;
+	background: #C53121;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.office_365_content_h1_h1 {
+	color: #555;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+.office_365_3_row_content_p {
+	font-size: 12px;
+	color: #555;
+	background: #fff;
+	padding: 20px 30px;
+	line-height: 20px;
+}
+
+.office_365_3_row_content_b {
+	font-size: 10px;
+	line-height: 20px;
+	color: #555;
+	text-align: center;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.office_365_3_row_content_b_2 {
+	font-size: 10px;
+	line-height: 20px;
+	color: #555;
+	text-align: center;
+	display: block;
+}
+
+.office_365_3_row_content_img {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.office_365_3_row_content_ul {
+	text-align: left;
+	font-size: 10px;
+	color: #555;
+	line-height: 20px;
+}
+
+.office_365_3_row_content_ul_li {
+	margin-bottom: 10px;
+}
+
+.dynamic_azure_parent_container_pp {
+	margin-top: 20px;
+	font-size: 12px;
+	color: #555;
+}
+
+.office_365_4_h2 {
+	font-size: 15px;
+	text-align: left;
+	color: #555;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+
+.office_365_4 {
+	padding: 40px 0px;
+}
+
+.office_365_4_p_img {
+	color: #555;
+	font-size: 10px;
+}
+
+.office_365_banner_h1 {
+	margin-top: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	line-height: 45px;
+}
+
+.power_bi_ul {
+	font-size: 10px;
+	color: #555;
+	padding-left: 0px;
+	list-style: none;
+}
+
+.power_bi_ul_li_span {
+	color: #C53121;
+}
+
+.power_bi_parent_h1 {
+	font-size: 15px;
+	color: #C53121;
+	text-align: left;
+	margin-top: 0px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.power_bi_parent {
+	padding: 40px 0px;
+}
+
+.power_bi_parent_p {
+	font-size: 10px;
+	color: #555;
+	text-align: justify;
+}
+
+.microsoft_cloud_ul {
+	font-size: 10px;
+	color: #555;
+}
+
+.microsoft_cloud_p_before_ul {
+	font-weight: 600;
+	color: #C53121;
+}
+
+.microsoft_cloud_parent_2 {
+	padding: 40px 0px;
+}
+
+.microsoft_cloud_parent_2_h1 {
+	margin-top: 0px;
+	color: #555;
+	line-height: 30px;
+	font-size: 25px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.dynamic_marketing_h1 {
+	font-size: 20px;
+	text-align: left;
+	margin-top: 0px;
+	color: #C53121;
+}
+
+.why_aligni_banner_caption_p {
+	font-size: 12px;
+	color: #555;
+	text-align: left;
+	width: 50%;
+}
+
+.why_aligni_col_12_p {
+	font-size: 12px;
+	color: #555;
+	text-align: justify;
+}
+
+.why_aligni_col_8_span {
+    color: #555;
+    font-size: 12px;
+    display: block;
+    border-bottom: 1px solid;
+    line-height: 20px;
+    width: 44%;
+}
+
+.why_aligni_col_8_h1 {
+	text-align: left;
+	color: #C53121;
+	margin-top: 0px;
+	font-size: 20px;
+}
+
+.why_aligni_col_8_p {
+	color: #555;
+	font-size: 9px;
+	text-align: justify;
+	line-height: 20px;
+}
+
+.why_aligni_col_12_p_2 {
+	font-size: 12px;
+	color: #555;
+	text-align: justify;
+}
+
+.why_aligni_col_12_ul {
+    color: #C53121;
+    font-size: 10px;
+    text-align: center;
+}
+
+.why_aligni_col_12_ul_li {
+	display: inline-block;
+}
+
+.business_review_col_12_p {
+	font-size: 12px;
+	color: #555;
+	text-align: justify;
+}
+
+.business_review_col_6_p {
+	text-align: left;
+	font-size: 12px;
+	color: #555;
+	line-height: 25px;
+}
+
+.business_review_ul {
+	color: #555;
+	font-size: 10px;
+}
+
+.aligni_implementation_col_3_h1 {
+	margin-top: 0px;
+	color: #555;
+	font-size: 12px;
+}
+
+.the_aligni_implementation_img_parent {
+	text-align: center;
+}
+
+.aligni_implementation_col_8_h1 {
+	color: #fff;
+	font-size: 20px;
+	text-align: left;
+	margin-top: 0px;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+.aligni_implementation_section_last {
+	background-image: url('../img/aligni_implementation_section_last.jpg');
+	height: 600px;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	padding: 40px 0px;
+}
+
+.aligni_implementation_section_last_ol {
+	font-size: 12px;
+}
+
+.aligni_implementation_section_last_ol_li {
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+.aligni_automation_h1 {
+	color: #555;
+	font-size: 20px;
+	margin-top: 0px;
+	text-align: left;
+	line-height: 25px;
+	margin-top: 50px;
+}
+
+.customer_care_col_3_parent {
+	padding: 20px;
+	background: #003B75;
+	min-height: 450px;
+	max-height: 450px;
+}
+
+.aligni_customer_care_h1 {
+	font-size: 20px;
+	margin-top: 0px;
+	color: #fff;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+.aligni_customer_care_p {
+	color: #fff;
+	font-size: 12px;
+	text-align: justify;
+}
+
+.distribution_p {
+	font-size: 12px;
+	color: #555;
+	text-align: left;
+}
+
+.distribution_section_1 {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.distribution_section_1_h1 {
+	color: #003B75;
+	margin-top: 0px;
+	font-size: 15px;
+	text-align: left;
+	line-height: 25px;
+}
+
+.distribution_section_1_ul {
+	color: #555;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.distribution_section_1_ul_li {
+	margin-bottom: 10px;
+}
+
+.distribution_section_2 {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.distribution_section_2_p {
+	color: #555;
+	font-size: 12px;
+	text-align: justify;
+}
+
+.distribution_section_1_container_margin_bottom {
+	margin-bottom: 20px;
+}
+
+.distribution_section_3 {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.distribution_section_3_h1 {
+	color: #003B75;
+	font-size: 20px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+.distribution_section_3_p {
+	text-align: justify;
+	color: #555;
+	font-size: 12px;
+}
+
+.distribution_section_4 {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.distribution_section_4_h1 {
+	color: #000;
+	font-size: 20px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+.finance_services_h1 {
+	margin-top: 0px;
+	color: #003B75;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+
+.finance_services_col_8_h1 {
+	margin-top: 0px;
+	color: #003B75;
+	font-size: 15px;
+	text-align: left;
+	width: 100%;
+	margin-bottom: 50px;
+	margin-top: 20px;
+	line-height: 25px;
+}
+
+.finance_services_col_8_p {
+	color: #555;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.health_care_col_4_ul {
+	font-size: 12px;
+	color: #555;
+	line-height: 20px;
+}
+
+.health_care_col_4_ul_li {
+	margin-bottom: 10px;
+}
+
+.eCommerce_section_2 {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.eCommerce_section_2_p {
+	color: #555;
+	font-size: 12px;
+	text-align: justify;
+}
+
+.non_profit_container_margin_bottom {
+	margin-bottom: 60px;
+}
+
+.vs_quick_book_span {
+	color: #003B75;
+}
+
+.vs_quick_book_col_4_h1 {
+	width: 100%;
+	font-size: 20px;
+	color: #003B75;
+	margin-top: 0px;
+}
+
+.vs_quick_book_section_1 {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.vs_quick_book_col_4_p {
+	font-size: 12px;
+	color: #555;
+}
+
+.vs_quick_book_section_2 {
+	padding: 40px 0px;
+	background: #fff;
+}
+
+.vs_quick_book_col_6_ul {
+	color: #555;
+	font-size: 12px;
+}
+
+.vs_quick_book_col_6_ul_li {
+	margin-bottom: 10px;
+	line-height: 25px;
+}
+
+.vs_quick_book_col_6_h1 {
+	background: #003B75;
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+.d_vs_netsuite_h1 {
+	color: #C53121;
+	font-size: 15px;
+	text-align: left;
+	margin-top: 0px;
+}
+
+.d_vs_netsuite_parent {
+	padding: 40px 0px;
+	background: #eee;
+}
+
+.book_a_meeting_main_content {
+	width: 50%;
+	margin: auto;
+	background: #fff;
+	padding: 20px 25px;
+	box-shadow: 1px 1px 5px 1px #555;
+}
+
+.book_a_meeting_main_content_h1 {
+	color: #003B75;
+	margin-top: 0px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.book_a_meeting_button_parent_a {
+	background: #C53121;
+	font-size: 15px;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.book_a_meeting_button_parent {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.book_a_meeting_button_parent_a:hover {
+	background: #003B75;
+	color: #fff;
+}
+
+.book_a_meeting_main_parent {
+	padding: 50px 0px;
+}
+
+.book_a_meeting_main_content_right_row {
+	margin-bottom: 30px;
+}
+
+.form-control {
+	font-size: 10px;
+}
+
+.book_a_meeting_main_content_right_row_select {
+    width: 100%;
+    font-size: 10px;
+    height: 30px;
+    background: transparent;
+    color: #495057;
+    border: 1px solid #ced4da;
+}
+
+.book_a_meeting_main_content_right_row_textarea {
+	width: 100%;
+    max-width: 100%;
+    height: 100px;
+    max-height: 100px;
+    font-size: 10px;
+    padding: 5px 15px;
+}
+
+.book_a_meeting_main_content_p {
+	color: #555;
+    font-size: 8px;
+    line-height: 20px;
+    text-align: left
+}
+
+.book_a_meeting_main_content_a {
+	color: #003B75;
+}
+
+.book_a_meeting_main_content_a:hover {
+	color: #C53121;
+}

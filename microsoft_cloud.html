@@ -104,7 +104,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="submenu_li_a">Document Management Solutions</a>
+                            <a href="#" class="submenu_li_a">Odoo ERP Solution</a>
                         </li>
                     </ul>
                 </li>
